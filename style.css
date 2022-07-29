@@ -65,13 +65,14 @@ h2{
     padding:18px;
     margin:3px;
     border:0;
-    border-radius: 100%;;
+    box-shadow:0px 1px 3px #fff;
+    
 }
 .appBg .orange {
     background-color: orange;
 }
 .appBg .gray {
-    background-color: gray;  
+    background-color: rgb(31, 68, 75);  
 }
 .container .area{
     margin:0 10px;
