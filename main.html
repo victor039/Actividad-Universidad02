@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Universitaria</title>
+    <link type="text/css " rel="stylesheet" href="style.css">
+    <script src="codigo.js"> </script>
+</head>
+
+<body>
+
+     <div class="appBg">
+            <h2>CALCULADORA</h2>
+            <form name="calculator">
+                <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+
+                <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="gray">
+                <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="gray">
+                <input type="button" value="9" onclick="document.calculator.ans.value+='9'" class="gray">
+                <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="orange">
+                <br>
+                <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class="gray">
+                <input type="button" value="5" onclick="document.calculator.ans.value+='5'" class="gray">
+                <input type="button" value="6" onclick="document.calculator.ans.value+='6'" class="gray">
+                <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="orange">
+                <br>
+                <input type="button" value="1" onclick="document.calculator.ans.value+='1'" class="gray">
+                <input type="button" value="2" onclick="document.calculator.ans.value+='2'" class="gray">
+                <input type="button" value="3" onclick="document.calculator.ans.value+='3'" class="gray">
+                <input type="button" value="x" onclick="document.calculator.ans.value+='*'" class="orange">
+                <br>
+                <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="gray">
+                <input type="reset" value="C" onclick="document.calculator.ans.value+='C'" class="gray">
+                <input type="button" value="="
+                    onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="gray">
+                <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
+
+            </form>
+        </div>
+    <div class="container">
+
+        <div class="area">
+            <h2> ÁREA DE UN TRIANGULO</h2>
+            <form class="formulario">
+
+                <label>Ingrese el valor de la base </label>
+                <input type="number" id="num1">
+                <label>Ingrese el valor de la altura </label>
+                <input type="number" id="num2">
+                <button type="button" onclick="calcular()">calcular</button>
+            </form>
+        </div>
+        <div class="area">
+            <h2> ÁREA DE UN RECTÁNGULO</h2>
+            <form class="formulario">
+
+                <label>Ingrese el valor de la base</label>
+                <input type="number" id="num01">
+                <label>Ingrese el valor de la altura</label>
+                <input type="number" id="num02">
+                <button type="button" onclick="calc()">calcular</button>
+            </form>
+        </div>
+        <div class="area">
+            <h2> ÁREA DE UN CÍRCULO</h2>
+            <form class="formulario">
+
+                <label>Ingrese el valor del radio</label>
+                <input type="number" id="num001">
+
+                <button type="button" onclick="ratio()">calcular</button>
+            </form>
+        </div>
+
+    </div>
+    <!--CONTAINER-->
+
+    <div class="container">
+
+        <div class="area">
+            <h2> DÍAS DE LA SEMANA</h2>
+            <form class="formulario">
+                <label>Ingrese un numero de 1 a 7 </label>
+                <input type="number" id="numero">
+                <button type="button" onclick="diasemana()">Ejecutar</button>
+            </form>
+        </div>
+        <div class="area">
+            <h2>CALIFICACIONES</h2>
+            <form class="formulario">
+
+                <label>Ingrese su calificación</label>
+                <input type="number" id="nota">
+                <button type="button" onclick="calificaciones()">convertir</button>
+            </form>
+        </div>
+
+        <div class="area">
+            <h2> COMPARAR EDADES</h2>
+            <form class="formulario">
+                <label>Edad 1 </label>
+                <input type="number" id="edad1">
+                <label>Edad 2</label>
+                <input type="number" id="edad2">
+                <button type="button" onclick="edades()">comparar</button>
+            </form>
+        </div>
+
+
+        <div class="area">
+            <h2> FACTORIAL</h2>
+            <form class="formulario">
+                <label>Ingrese un valor </label>
+                <input type="number" id="factor">
+                <button type="button" onclick="calcularFactorial()">calcular</button>
+            </form>
+        </div>
+
+    </div>
+    <!--CONTAINER-->
+
+
+
+
+
+
+
+</body>
+</html>
